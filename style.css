@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #00071b;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 185vh;
+    font-family: "Outfit", sans-serif;
+}
+
+.head{
+    text-align: center;
+    margin: 20px 0px;
+    text-shadow: 0 0 7px rgba(124, 171, 248, 0.815),
+    0 0 10px rgba(124, 171, 248, 0.815), 0 0 21px rgba(124, 171, 248, 0.815),
+    0 0 42px rgb(4, 0, 255), 0 0 82px rgb(4, 0, 255), 0 0 92px rgb(4, 0, 255),
+    0 0 102px rgb(4, 0, 255), 0 0 151px rgb(4, 0, 255);
+}
+
+.wrapper{
+    display: flex;
+    margin: 10px 20px;
+    height: auto;
+    min-width: 95%;
+    background-color: #0b193e;
+    border-radius: 30px;
+}
+
+.weather{
+    width: 40%;
+}
+
+.weather .header2{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.weather .form2 form{
+    display: flex;
+    width: 100%;
+    padding: 0 70px;
+}
+
+.weather .form2 form input{
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    padding: 10px;
+    width: 100%;
+    color: black;
+}
+
+.weather .form2 form button{
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    padding: 10px;
+    margin-left: 40px;
+    width: 150px;
+    background-color: #112a6e;
+    cursor: pointer;
+    color: white;
+}
+
+.weather #app-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #112a6e;
+    border-radius: 20px;
+    margin: 20px 70px;
+}
+
+.weather #app-container #location{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.weather #app-container #temp img{
+    width: 300px;
+    margin: 20px auto;
+}
+
+.weather #app-container #temp p{
+    font-size: 90px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+
+.weather #app-container #climate{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.news{
+    width: 60%;
+}
+
+.categories{
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+.main-screen{
+    padding: 0 30px;
+    overflow: hidden;
+}
+
+.main-screen .logo{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: 600;
+}
+
+.main-screen .categorieswrapper{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-screen .news-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 30px auto;
+    overflow-y: scroll;
+    height: 530px;
+    scrollbar-width: 0px;
+    scrollbar-color: transparent;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #112a6e;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #112a6e;
+}
+
+.main-screen .news-list .item{
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    background-color: #112a6e;
+}
+
+.main-screen .news-list .details h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.main-screen .news-list .details p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.main-screen .categories{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}

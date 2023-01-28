@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link rel="stylesheet" href="style.css"></Link>
+    <title>Daily Trivia</title>
+</head>
+<body>
+    <h1 class="head">DAILY TRIVIA</h1>
+    <div class="wrapper">
+      <div class="weather">
+        <div class="header2">
+           <h2>WEATHER</h2>
+        </div>
+        <div class="form2">
+          <form id="search-form">
+             <input type="search" placeholder="enter city's name" id="search-input">
+             <br>
+             <button id="search-button">Search</button>
+          </form>
+        </div>
+        <div id="app-container">
+          <div id="location">
+            <div>LOCATION</div>
+          </div>
+          <div id="temp">
+            <img id="temp-icon" src="./img/cloud big.png" alt="">
+            <br>
+            <p>
+                <span id="temp-value">0</span>
+                <span id="temp-unit">&#176c</span>
+            </p>
+          </div>
+          <div id="climate">
+             <p>CLIMATE</p>
+          </div>
+        </div>
+      </div>
+      <div class="news app">
+        <div class="screen main-screen">
+          <h2 class="logo">NEWS</h2>
+         <!-- <div class="categorieswrapper">
+                    <div class="categories">Business</div>
+                    <div class="categories">Technology</div>
+                    <div class="categories">Sports</div>
+                    <div class="categories">Science</div>
+                </div>
+                <div class="news-list">
+                    <div class="item">
+                        Business
+                    </div>
+                    <div class="item">
+                        Sports
+                    </div>
+                    <div class="item">
+                        Science
+                    </div>
+                    <div class="item">
+                        Technology
+                    </div>
+                </div> -->
+
+          <div class="categories"></div>
+          <div class="news-list"></div>
+        </div>
+
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="newsapi.js"></script>
+</body>
+</html>
